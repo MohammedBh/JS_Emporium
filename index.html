@@ -29,10 +29,64 @@
             <div class="d-flex align-items-center rightButtons">
                 <button class="mod-bright m-1 p-2 border-1 rounded-1 bg-white"></button>
                 <button class="mod-dark m-1 p-2 border-1 rounded-1 bg-dark"></button>
-                <button class="border-0 p-2 bg-secondary text-white">CONNEXION</button>
+                <button class="connexionButton border-0 p-2 bg-secondary text-white">CONNEXION</button>
             </div>
         </nav>
     </header>
+    <!-- CONNEXION MODAL -->
+    <section id="connexionDiv" class="connexionDiv">
+        <div class="justify-content-end d-flex">
+            <i id="closeWindow" class="fas fa-times-circle py-3 px-4 fs-3"></i>
+        </div>
+        <div class="firstconnexionPage">
+            <h1 class="text-center">Connexion</h1>
+            <div class="text-center mt-5">
+                <p class="mb-2">Nom d'utilisateur</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-5">
+                <button class="my-3 border-0 p-2 bg-secondary text-white">CONNEXION</button>
+                <p>Pas encore de compte? <button id="sInscrire" class="changePage">S'inscrire</button></p>
+            </div>
+        </div>
+    </section>
+    <section id="registerDiv" class="connexionDiv">
+        <div class="justify-content-end d-flex">
+            <i id="closeWindow2" class="fas fa-times-circle py-3 px-4 fs-3"></i>
+        </div>
+        <div class="secondconnexionPage">
+            <h1 class="text-center m-0">Inscription</h1>
+            <div class="text-center mt-5">
+                <p class="mb-2">Nom</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Prénom</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">E-mail</p>
+                <input type="email" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Confirmer votre mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-5">
+                <button class="my-3 border-0 p-2 bg-secondary text-white">S'INSCRIRE</button>
+                <p>Vous avez deja un compte? <button id="seConnecter" class="changePage">Se connecter</button></p>
+            </div>
+        </div>
+    </section>
+    <div id="overlay"></div>
     <!-- FIRST BANNER "SHOP AT" -->
     <section id="firstSect">
         <div class="row shopBanner row-no-margin">
@@ -178,10 +232,7 @@
         </div>
     </section>
     <!-- CAROUSEL "HOT FASHION PRODUCTS" -->
-    <section>
-        <h2 class="text-center mt-5">Hot Fashion Produts</h2>
-        <div class="carousel"></div>
-    </section>
+
     <!-- BEFORE FOOTER (3 CARDS TRUST, SHIPPING AND TRUST) -->
     <section>
         <div class="row text-center bottomCards m-auto">
@@ -195,12 +246,12 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="threeCards redCard text-white mb-3 mb-lg-5">
+                <div class="threeCards mb-3 mb-lg-5">
                     <i class="fas fa-paper-plane fs-2 p-5"></i>
                     <h4 class="fs-6 pt-1 pb-5">VERY FAST SHIPPING</h4>
-                    <p class="px-5 pb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                    <p class="px-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
                         repellendus. Voluptatum qui, fuga ducimus voluptate omnis mollitia nostrum aut repudiandae.</p>
-                    <button class="border-0 rounded py-2 px-2 mb-5 bg-white">LEARN MORE</button>
+                    <button class="border-0 rounded py-2 px-2 mb-5 text-white">LEARN MORE</button>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -283,17 +334,6 @@
             </div>
         </section>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
     <!-- ------------------------------------------------------------------ -->
     <!-- jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>

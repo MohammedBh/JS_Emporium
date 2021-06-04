@@ -22,3 +22,72 @@ header
 .rightButtons
     button:nth-child(3)
         font-size: 13px
+// MODAL CONNEXION PAGE
+.connexionDiv
+    position: fixed
+    background: white
+    top: 50%
+    left: 50%
+    border: 2px solid #6e6e6e
+    transform: translate(-50%, -50%) scale(0)
+    transition: 200ms ease-in-out
+    z-index: 10
+    .firstconnexionPage
+        padding: 80px 280px
+        h1
+            color: black
+            font-size: 35px
+        div
+            p
+                font-weight: 500
+            input:focus
+                outline: none
+#connexionDiv.active
+        transform: translate(-50%, -50%) scale(1)
+// MODAL REGISTER PAGE
+.connexionDiv
+    position: fixed
+    background: white
+    top: 50%
+    left: 50%
+    border: 2px solid #6e6e6e
+    transform: translate(-50%, -50%) scale(0)
+    transition: 200ms ease-in-out
+    z-index: 10
+    .secondconnexionPage
+        padding: 0px 240px
+        padding-bottom: 10px
+        h1
+            color: black
+            font-size: 35px
+        div
+            p
+                font-weight: 500
+            input:focus
+                outline: none
+.connexionDiv.active
+        transform: translate(-50%, -50%) scale(1)
+// BUTTON "S'inscrire" & "Se connecter"
+.changePage
+    color: #00c3ff
+    border: 0px
+    background: none
+.changePage:active
+        color: #0084ff
+// Overlay behind modal
+#overlay
+    position: fixed
+    opacity: 0
+    pointer-events: none
+    transition: 200ms ease-in-out
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #0000005e
+#overlay.active
+    opacity: 1
+    pointer-events: all
+// Close Modal Button
+#closeWindow, #closeWindow2
+    cursor: pointer
