@@ -1,24 +1,148 @@
 body
-    margin: 0
+    margin: auto
 
-header
-    h1
-        color: #212529
-        font-size: 50px
-        margin-top: 80px
-        font-weight: 600
+header.darkmod
+    background: #585858
+
+.sticky
+    position: fixed
+    top: 0
+    background: white
+    padding-top: 20px
+    width: 100%
+    margin: auto
+    z-index: 1
+
+.content
+    padding: 15px
+
+#topimgOFF.darkmod
+    background: #585858
 
 .navButtons
-    margin-left: 40px
     a
         font-size: 15px
         margin-right: 25px
         margin-left: 25px
         text-decoration: none
         color: black
-    a:hover 
+    a:hover
         color: #8f8f8f
+
+.navButtons.darkmod
+    background: #585858
+
+.topButtons
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+.toggleButton
+    top: 2.5%
+    right: 0%
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    width: 40px
+    height: 30px
+    .bar
+        height: 8px
+        width: 100%
+        background: white
+        border-radius: 5px
+        border: #444444 solid 2px
 
 .rightButtons
     button:nth-child(3)
         font-size: 13px
+#mediaConnexionON
+    button
+        display: none
+
+#topimgON
+    img
+        height: 4vh
+        display: none
+
+// MODAL CONNEXION PAGE
+.connexionDiv
+    position: fixed
+    background: white
+    top: 50%
+    left: 50%
+    border: 2px solid #6e6e6e
+    transform: translate(-50%, -50%) scale(0)
+    transition: 200ms ease-in-out
+    z-index: 10
+    .firstconnexionPage
+        padding: 80px 280px
+        h1
+            color: black
+            font-size: 35px
+        div
+            p
+                font-weight: 500
+            input:focus
+                outline: none
+#connexionDiv.active
+    transform: translate(-50%, -50%) scale(1)
+.connexionDiv.darkmod
+    background: #242424
+    color: white
+    .firstconnexionPage
+        h1
+            color: white
+// MODAL REGISTER PAGE
+.connexionDiv
+    position: fixed
+    background: white
+    top: 50%
+    left: 50%
+    border: 2px solid #6e6e6e
+    transform: translate(-50%, -50%) scale(0)
+    transition: 200ms ease-in-out
+    z-index: 10
+    .secondconnexionPage
+        padding: 0px 240px
+        padding-bottom: 10px
+        h1
+            color: black
+            font-size: 35px
+        div
+            p
+                font-weight: 500
+            input:focus
+                outline: none
+.connexionDiv.active
+    transform: translate(-50%, -50%) scale(1)
+.conn2.darkmod
+    background: #242424
+    color: white
+    .secondconnexionPage
+        h1
+            color: white
+
+// BUTTON "S'inscrire" & "Se connecter"
+.changePage
+    color: #00c3ff
+    border: 0px
+    background: none
+.changePage:active
+    color: #0084ff
+// Overlay behind modal
+#overlay
+    position: fixed
+    opacity: 0
+    pointer-events: none
+    transition: 200ms ease-in-out
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #0000005e
+#overlay.active
+    opacity: 1
+    pointer-events: all
+// Close Modal Button
+#closeWindow, #closeWindow2
+    cursor: pointer

@@ -1,0 +1,81 @@
+// MODAL
+@media screen and (min-width: 550px) and (max-width: 940px)
+    #connexionDiv
+        .firstconnexionPage
+            padding: 40px 100px
+
+@media screen and (min-width: 0px) and (max-width: 550px)
+    #connexionDiv
+        .firstconnexionPage
+            padding: 10px 35px
+            div
+                input
+                    width: 25vh
+
+// FOOTER
+@media screen and (min-width: 992px) and (max-width: 1372px)
+
+    #bigFooter
+        .footerDiv
+            max-width: 80%
+
+@media screen and (max-width: 1030px)
+
+    #bigFooter
+        .footerDiv
+            max-width: 100%
+
+@media screen and (max-width: 610px)
+
+    .toggleButton
+        display: flex
+
+    .navbar
+        flex-direction: column
+        align-items: flex-start
+
+    .navbar-links
+        flex-direction: column
+        width: 100%
+        margin-top: 15px
+        display: none
+        a
+            text-align: center
+            padding: 8px 5px
+            border-bottom: 1px solid #444444
+        a:last-of-type
+            border: 0
+        a:hover
+            background: #444444
+            color: white
+    .navbar-links.active
+        transition-duration: 1s
+        display: flex
+
+    #mediaConnexionON
+        button
+            display: flex
+
+    #mediaConnexionOFF
+        button
+            display: none
+
+    #topimgON
+        img
+            display: flex
+            width: 80%
+            height: 80%
+
+    #topimgOFF
+        margin-top: 0 !important
+        margin-bottom: 0 !important
+        padding-top: 0 !important
+        padding-bottom: 0 !important
+        img
+            display: none
+    .navButtons
+        margin-left: 0
+        padding-top: 20px
+
+    .navbar
+        margin-bottom: 0 !important

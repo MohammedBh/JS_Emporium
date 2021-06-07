@@ -14,25 +14,94 @@
 <body>
     <!-- TITLE (EMPORIUM) + NAVBAR + DARK MOD + CONNEXION BUTTON -->
     <header>
-        <div class="d-flex justify-content-center my-5 py-4">
+        <div id="topimgOFF" class="d-flex justify-content-center pb-5 py-4">
             <img src="./public/img/logo.png" alt="logo">
         </div>
-        <nav class="navButtons navbar justify-content-center mb-4">
-            <div>
-                <a href="#">HOME</a>
-                <a href="#">PRODUCT</a>
-                <a href="#">BLOG</a>
-                <a href="#">ELEMENTS</a>
-                <a href="#">ABOUT</a>
-                <a href="#">CONTACT</a>
+        <nav class="navButtons navbar justify-content-center pb-4">
+            <div class="topButtons">
+                <div id="mediaConnexionON" class="d-flex align-items-center rightButtons">
+                    <button id="brightMod2" class="m-1 p-2 border-1 rounded-1 bg-white"></button>
+                    <button id="darkMod2" class="m-1 p-2 border-1 rounded-1 bg-dark"></button>
+                    <button class="connexionButtonn border-0 p-2 bg-secondary text-white">CONNEXION</button>
+                </div>
+                <div id="topimgON" class="d-flex justify-content-center align-self-center">
+                    <img id="topimgOn" src="./public/img/logo.png" alt="logo">
+                </div>
+                <a href="#" class="toggleButton">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
             </div>
-            <div class="d-flex align-items-center rightButtons">
-                <button class="mod-bright m-1 p-2 border-1 rounded-1 bg-white"></button>
-                <button class="mod-dark m-1 p-2 border-1 rounded-1 bg-dark"></button>
-                <button class="border-0 p-2 bg-secondary text-white">CONNEXION</button>
+            <div class="navbar-links">
+                <a class="mx-3" href="#">HOME</a>
+                <a class="mx-3" href="#">PRODUCT</a>
+                <a class="mx-3" href="#">BLOG</a>
+                <a class="mx-3" href="#">ELEMENTS</a>
+                <a class="mx-3" href="#">ABOUT</a>
+                <a class="mx-3" href="#">CONTACT</a>
+            </div>
+            <div id="mediaConnexionOFF" class="d-flex align-items-center rightButtons">
+                <button id="brightMod" class="m-1 p-2 border-1 rounded-1 bg-white"></button>
+                <button id="darkMod" class="m-1 p-2 border-1 rounded-1 bg-dark"></button>
+                <button class="connexionButton border-0 p-2 bg-secondary text-white">CONNEXION</button>
             </div>
         </nav>
     </header>
+    <!-- CONNEXION MODAL -->
+    <section id="connexionDiv" class="connexionDiv">
+        <div class="justify-content-end d-flex">
+            <i id="closeWindow" class="fas fa-times-circle py-3 px-4 fs-3"></i>
+        </div>
+        <div class="firstconnexionPage">
+            <h1 class="text-center">Connexion</h1>
+            <div class="text-center mt-5">
+                <p class="mb-2">Nom d'utilisateur</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-5">
+                <button class="my-3 border-0 p-2 bg-secondary text-white">CONNEXION</button>
+                <p>Pas encore de compte? <button id="sInscrire" class="changePage">S'inscrire</button></p>
+            </div>
+        </div>
+    </section>
+    <section id="registerDiv" class="connexionDiv conn2">
+        <div class="justify-content-end d-flex">
+            <i id="closeWindow2" class="fas fa-times-circle py-3 px-4 fs-3"></i>
+        </div>
+        <div class="secondconnexionPage">
+            <h1 class="text-center m-0">Inscription</h1>
+            <div class="text-center mt-5">
+                <p class="mb-2">Nom</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Prénom</p>
+                <input type="text" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">E-mail</p>
+                <input type="email" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-2">Confirmer votre mot de passe</p>
+                <input type="password" size="35">
+            </div>
+            <div class="text-center mt-5">
+                <button class="my-3 border-0 p-2 bg-secondary text-white">S'INSCRIRE</button>
+                <p>Vous avez deja un compte? <button id="seConnecter" class="changePage">Se connecter</button></p>
+            </div>
+        </div>
+    </section>
+    <div id="overlay"></div>
     <!-- FIRST BANNER "SHOP AT" -->
     <section id="firstSect">
         <div class="row shopBanner row-no-margin">
@@ -51,20 +120,20 @@
         </div>
     </section>
     <!-- 3 BANNERS "LIVINGROOM, SALEITEMS, CLOTHES" -->
-    <section id="servicesImg" class="justify-content-center row mt-5 mx-2 pt-4">
-        <div class="col-lg-4 col-md-12 my-md-2 my-1">
+    <section id="servicesImg" class="justify-content-center row pt-4">
+        <div id="topCards1" class="col-lg-4 col-md-12 my-md-2 my-1">
             <div class="serviceImg1 servicescontImg d-flex flex-column text-center justify-content-center text-white">
                 <span>Living Room</span>
                 <div class="underlinee"></div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 my-md-2 my-1">
+        <div id="topCards2" class="col-lg-4 col-md-12 my-md-2 my-1">
             <div class="serviceImg2 servicescontImg d-flex flex-column text-center justify-content-center text-white">
                 <span>Sale Items</span>
                 <div class="underlinee"></div>
             </div>
         </div>
-        <div class="col-lg-4 col-md-12 my-md-2 my-1">
+        <div id="topCards3" class="col-lg-4 col-md-12 my-md-2 my-1">
             <div class="serviceImg3 servicescontImg d-flex flex-column text-center justify-content-center text-white">
                 <span>Clothes</span>
                 <div class="underlinee"></div>
@@ -75,18 +144,18 @@
     <section id="productCards" class="pt-5">
         <h2 class="text-center my-5">Recent Products</h2>
         <div class="row recentProducts m-auto">
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-luxry-sofa.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Luxury Sofa</span>
                     <span class="priceCard">$600.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-gloves.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-gloves.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex align-content-center justify-content-center">
                     <div class="d-flex justify-content-center align-self-center">
@@ -98,18 +167,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-cups.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-cups.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Colorful Bowl</span>
                     <span class="priceCard">$18.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-bag.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-bag.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex align-content-center justify-content-center">
                     <div class="d-flex justify-content-center align-self-center">
@@ -121,43 +190,43 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-tshitr.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Minimal T-Shirt</span>
                     <span class="priceCard">$15.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-plates.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-plates.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Plates Set</span>
                     <span class="priceCard">$30.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-modern-sofa.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Modern Sofa</span>
                     <span class="priceCard">$900.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
-                    <img src="./public/img/products_mini/product-bed.jpg" alt="" class="img-fluid mb-4">
+                    <img src="./public/img/products_mini/product-bed.jpg" alt="" class="img-fluid mb-4 imgZoom">
                 </div>
                 <div class="d-flex flex-column text-center">
                     <span class="mb-3 nameCard">Bed Linen</span>
                     <span class="priceCard">$79.00</span>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 px-3 mb-5">
+            <div class="col-lg-4 col-12 px-3 mb-5 divZoom">
                 <div>
                     <img src="./public/img/products_mini/product-shoes.jpg" alt="" class="img-fluid mb-4">
                 </div>
@@ -177,16 +246,99 @@
             </div>
         </div>
     </section>
-    <!-- CAROUSEL "HOT FASHION PRODUCTS" -->
-    <section>
-        <h2 class="text-center mt-5">Hot Fashion Produts</h2>
-        <div class="carousel"></div>
+    <!-- CAROUSEL -->
+    <section id="caroussel" class="mt-5 container">
+        <div class="center d-flex flex-column align-items-center justify-content-center">
+            <div class="wrapper d-flex w-100">
+                <div class="inner d-flex">
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <div class="content text-center">
+                            <h1>Luxury Sofa</h1>
+                            <span class="text-danger priceCard">$600.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <div class="content d-flex m-auto text-center">
+                            <button class="bg-danger text-white text-uppercase">SALE !</button>
+                            <div class="ml-5">
+                                <h1>Leather Glaves</h1>
+                                <span class="text-danger"> <del class="text-dark">$34.00 </del>$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <div class="content text-center">
+                            <h1>Colorful Bowl</h1>
+                            <span class="text-danger">$18.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-bag.jpg">
+                        <div class="content d-flex m-auto text-center">
+                            <button class="bg-danger text-white text-uppercase">SALE !</button>
+                            <div class="ml-5">
+                                <h1>Women Bag</h1>
+                                <span class="text-danger"> <del class="text-dark">$420.00</del>$350.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <div class="content text-center">
+                            <h1>Luxury Sofa</h1>
+                            <span class="text-danger">$600.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <div class="content text-center">
+                            <h1>Colorful Bowl</h1>
+                            <span class="text-danger">$18.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-gloves.jpg">
+                        <div class="content d-flex m-auto text-center">
+                            <button class="bg-danger text-white ">SALE !</button>
+                            <div class="ml-5 text-center">
+                                <h1>Leather Glaves</h1>
+                                <span class="text-danger"> <del class="text-dark">$34.00</del>$27.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-luxry-sofa.jpg">
+                        <div class="content text-center">
+                            <h1>Luxury Sofa</h1>
+                            <span class="text-danger">$600.00</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./public/img/products_mini/product-cups.jpg">
+                        <div class="content text-center">
+                            <h1>Colorful Bowl</h1>
+                            <span class="text-danger">$18.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carouButtons" id="map">
+                <button class="active first"></button>
+                <button class="second"></button>
+                <button class="third"></button>
+                <button class="quatre"></button>
+            </div>
+        </div>
     </section>
     <!-- BEFORE FOOTER (3 CARDS TRUST, SHIPPING AND TRUST) -->
     <section>
         <div class="row text-center bottomCards m-auto">
             <div class="col-lg-4">
-                <div class="threeCards mb-3 mb-lg-5">
+                <div id="threeCards1" class="threeCards mb-3 mb-lg-5">
                     <i class="far fa-check-circle fs-2 p-5"></i>
                     <h4 class="fs-6 pt-1 pb-5">TRUSTED BY 10,000+ CUSTOMERS</h4>
                     <p class="px-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, repellendus.
@@ -195,16 +347,16 @@
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="threeCards redCard text-white mb-3 mb-lg-5">
+                <div id="threeCards2" class="threeCards mb-3 mb-lg-5">
                     <i class="fas fa-paper-plane fs-2 p-5"></i>
                     <h4 class="fs-6 pt-1 pb-5">VERY FAST SHIPPING</h4>
-                    <p class="px-5 pb-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
+                    <p class="px-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
                         repellendus. Voluptatum qui, fuga ducimus voluptate omnis mollitia nostrum aut repudiandae.</p>
-                    <button class="border-0 rounded py-2 px-2 mb-5 bg-white">LEARN MORE</button>
+                    <button class="border-0 rounded py-2 px-2 mb-5 text-white">LEARN MORE</button>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="threeCards mb-3 mb-lg-5">
+                <div id="threeCards3" class="threeCards mb-3 mb-lg-5">
                     <i class="far fa-check-circle fs-2 p-5"></i>
                     <h4 class="fs-6 pt-1 pb-5">TRUSTED BY 10,000+ CUSTOMERS</h4>
                     <p class="px-5 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, repellendus.
@@ -283,17 +435,6 @@
             </div>
         </section>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
     <!-- ------------------------------------------------------------------ -->
     <!-- jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>

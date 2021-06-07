@@ -1,3 +1,6 @@
+body.darkmod
+    background: #585858
+
 .row
     margin-left: 0
     margin-right: 0
@@ -28,8 +31,7 @@
         span
             font-size: 40px
         .underlinee
-            background: white
-            height: 3px
+            border-top: 2px solid white
             margin: 0 15%
     .serviceImg1
         background-image: url(../../public/img/services/service-1.jpg)
@@ -37,6 +39,18 @@
         background-image: url(../../public/img/services/service-2.jpg)
     .serviceImg3
         background-image: url(../../public/img/services/slider-3.jpg)
+#servicesImg.darkmod
+    background: #585858
+
+#productCards.darkmod
+    background: #585858
+    h2
+        color: white
+    .recentProducts
+        div
+            div:nth-child(2)
+                .nameCard
+                    color: white
 
 .recentProducts
     max-width: 60%
@@ -47,6 +61,10 @@
         .priceCard
             font-weight: 600
             color: #dd4545
+        img:hover
+            transform: scale(1.2)
+            transition: all 1.5s ease-in-out
+            
 .saleButton
     background: #dd4545
     border-radius: 100%
@@ -60,15 +78,44 @@
     width: 10
     button
         background: #dd4545
-        
+
 .bigBanner
     background-image: url(../../public/img/cta-bg.jpg)
 
-.carousel
-    background: green
-    height: 400px
-    margin-bottom: 50px
+// CAROUSEL
+#caroussel
+    .center
+        height: 100%
+        width: 100
+#caroussel.darkmod
+    background: #585858
+.wrapper
+    grid-gap:1em
+    overflow: hidden
+.inner
+    grid-gap: 1em
+    transition: all 1s ease-in-out
+.content
+    button
+        border-radius: 100%
+        width: 80px
+        border: 0
+    div
+        img
+            height: auto
+.carouButtons
+    button
+        height: 20px
+        width: 20px
+        background: white
+        border-radius: 100% 
+        border: 2px solid !important
+        margin: 20px 5px
+    button:focus
+        background: red
+        border: 2px solid !important
 
+// 3 LAST CARDS BOTTOM
 .threeCards
     background: #f3f2f3
     h4
@@ -78,7 +125,16 @@
     button
         background: #343a40
 
-.redCard
+.threeCards:hover
     background: #dd4545
-    i
-        background: solid
+    i, h4, p
+        color: white
+.threeCards.darkmod
+    background: #464646
+    i, h4, p
+        color: white
+.threeCards.darkmod:hover
+    background: #dd4545
+
+.bottomCards.darkmod
+    background: #585858
