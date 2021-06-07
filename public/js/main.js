@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Sticky
 let myBody = document.getElementsByTagName('body')[0]
 let navbar = document.querySelector('.navButtons')
@@ -15,17 +16,24 @@ myBody.setAttribute('onscroll', 'myFunction()')
 // --------------- OPEN MODAL
 let openModalButton = document.querySelector('.connexionButton')
 let openModalButtonn = document.querySelector('.connexionButtonn')
+=======
+// --------------- OPEN MODAL
+let openModalButton = document.querySelector('.connexionButton')
+>>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 let closeModalButton = document.querySelector('#closeWindow')
 
 let connexionWindow = document.querySelector('#connexionDiv')
 let overlay = document.querySelector('#overlay')
 
 
+<<<<<<< HEAD
 openModalButtonn.addEventListener('click', () => {
     connexionWindow.classList.add('active')
     overlay.classList.add('active')
 })
 
+=======
+>>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 openModalButton.addEventListener('click', () => {
     connexionWindow.classList.add('active')
     overlay.classList.add('active')
@@ -66,6 +74,7 @@ overlay.addEventListener('click', () => {
 })
 // ------------------------------------- END MODAL
 
+<<<<<<< HEAD
 // Navbar Toggle Button
 let toggleButton = document.querySelector('.toggleButton')
 let navbarLinks = document.querySelector('.navbar-links')
@@ -255,3 +264,6 @@ carouButtons.addEventListener("click", e => {
         }
     }
 });
+=======
+// Zoom 3 Cards
+>>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
