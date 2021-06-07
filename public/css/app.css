@@ -16916,7 +16916,6 @@ header.darkmod {
   font-size: 13px;
 }
 
-<<<<<<< HEAD
 #mediaConnexionON button {
   display: none;
 }
@@ -16926,8 +16925,6 @@ header.darkmod {
   display: none;
 }
 
-=======
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 .connexionDiv {
   position: fixed;
   background: white;
@@ -16956,7 +16953,6 @@ header.darkmod {
   transform: translate(-50%, -50%) scale(1);
 }
 
-<<<<<<< HEAD
 .connexionDiv.darkmod {
   background: #242424;
   color: white;
@@ -16965,8 +16961,6 @@ header.darkmod {
   color: white;
 }
 
-=======
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 .connexionDiv {
   position: fixed;
   background: white;
@@ -16996,7 +16990,6 @@ header.darkmod {
   transform: translate(-50%, -50%) scale(1);
 }
 
-<<<<<<< HEAD
 .conn2.darkmod {
   background: #242424;
   color: white;
@@ -17005,8 +16998,6 @@ header.darkmod {
   color: white;
 }
 
-=======
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 .changePage {
   color: #00c3ff;
   border: 0px;
@@ -17038,13 +17029,10 @@ header.darkmod {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 body.darkmod {
   background: #585858;
 }
 
-=======
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 .row {
   margin-left: 0;
   margin-right: 0;
@@ -17144,7 +17132,6 @@ body.darkmod {
   background-image: url(../../public/img/cta-bg.jpg);
 }
 
-<<<<<<< HEAD
 #caroussel .center {
   height: 100%;
   width: 100;
@@ -17184,26 +17171,6 @@ body.darkmod {
 .carouButtons button:focus {
   background: red;
   border: 2px solid !important;
-=======
-.nameCarousel {
-  font-size: 15px;
-}
-
-.priceCarousel {
-  font-size: 15px;
-}
-
-.carouButton {
-  background: #dd4545;
-  border-radius: 100%;
-  padding: 15px 9px;
-  margin-right: 25px;
-}
-
-.dotCarousel {
-  font-size: 25px;
-  width: 3%;
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 }
 
 .threeCards {
@@ -17220,7 +17187,6 @@ body.darkmod {
 }
 
 .threeCards:hover {
-<<<<<<< HEAD
   background: #dd4545;
 }
 .threeCards:hover i, .threeCards:hover h4, .threeCards:hover .h4, .threeCards:hover p {
@@ -17240,12 +17206,6 @@ body.darkmod {
 
 .bottomCards.darkmod {
   background: #585858;
-=======
-  background: #dd4545;
-}
-.threeCards:hover i, .threeCards:hover h4, .threeCards:hover .h4, .threeCards:hover p {
-  color: white;
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 }
 
 #bigFooter {
@@ -17282,7 +17242,6 @@ body.darkmod {
     max-width: 100%;
   }
 }
-<<<<<<< HEAD
 @media screen and (max-width: 610px) {
   .toggleButton {
     display: flex;
@@ -17350,8 +17309,6 @@ body.darkmod {
     margin-bottom: 0 !important;
   }
 }
-=======
->>>>>>> f57dd038382df3ad4ac74c2f6be4e9a84e211a77
 body {
   font-family: "Poppins", sans-serif;
   width: auto;
